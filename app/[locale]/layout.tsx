@@ -2,7 +2,7 @@ import { NextIntlClientProvider, useMessages } from 'next-intl';
 
 import { Toaster } from '@/components/ui/sonner';
 import Navigation from '@/components/home/Navigation';
-import type { Metadata } from 'next';
+
 import './globals.css';
 
 import { Suspense } from 'react';
@@ -12,13 +12,7 @@ import SeoScript from '@/components/seo/SeoScript';
 
 import Loading from './loading';
 
-export const metadata: Metadata = {
-  // 保留原有 meta 配置，新增 partnerboostverifycode 标签
-  other: {
-    partnerboostverifycode: '32dc01246faccb7f5b3cad5016dd5033',
-  },
-  
-};
+
 
 export default function RootLayout({
   children,
