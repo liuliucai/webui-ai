@@ -12,8 +12,6 @@ import SeoScript from '@/components/seo/SeoScript';
 
 import Loading from './loading';
 
-
-
 export default function RootLayout({
   children,
   params: { locale },
