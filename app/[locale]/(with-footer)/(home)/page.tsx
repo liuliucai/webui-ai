@@ -42,7 +42,7 @@ export default async function Page() {
   ]);
 
   return (
-    <meta name="partnerboostverifycode" content="32dc01246faccb7f5b3cad5016dd5033" />
+    
     <div className='relative w-full'>
       <div className='relative mx-auto w-full max-w-pc flex-1 px-3 lg:px-0'>
         <div className='my-5 flex flex-col text-center lg:mx-auto lg:my-10 lg:gap-1'>
