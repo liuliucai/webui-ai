@@ -2,7 +2,7 @@ import { NextIntlClientProvider, useMessages } from 'next-intl';
 
 import { Toaster } from '@/components/ui/sonner';
 import Navigation from '@/components/home/Navigation';
-import Head from 'next/head';
+import type { Metadata } from 'next';
 import './globals.css';
 
 import { Suspense } from 'react';
@@ -11,6 +11,14 @@ import GoogleAdScript from '@/components/ad/GoogleAdScript';
 import SeoScript from '@/components/seo/SeoScript';
 
 import Loading from './loading';
+
+export const metadata: Metadata = {
+  // 保留原有 meta 配置，新增 partnerboostverifycode 标签
+  other: {
+    partnerboostverifycode: '32dc01246faccb7f5b3cad5016dd5033',
+  },
+  
+};
 
 export default function RootLayout({
   children,
@@ -23,10 +31,6 @@ export default function RootLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning className='dark'>
-      <Head>
-        {/* 新增 meta 标签 */}
-        <meta name="partnerboostverifycode" content="32dc01246faccb7f5b3cad5016dd5033" />
-      </Head>
       <body className='relative mx-auto flex min-h-screen flex-col bg-tap4-black text-white'>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Toaster
