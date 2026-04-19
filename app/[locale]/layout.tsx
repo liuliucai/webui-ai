@@ -15,6 +15,7 @@ import Loading from './loading';
 export const metadata = {
   other: {
     partnerboostverifycode: '32dc01246faccb7f5b3cad5016dd5033',
+    verify-yeahpromos:'778d0866389c'
   },
 };
 
@@ -29,7 +30,6 @@ export default function RootLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning className='dark'>
-      <meta name="verify-yeahpromos" content="778d0866389c" />
       <body className='relative mx-auto flex min-h-screen flex-col bg-tap4-black text-white'>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Toaster
