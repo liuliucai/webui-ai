@@ -15,7 +15,7 @@ import Loading from './loading';
 export const metadata = {
   other: {
     partnerboostverifycode: '32dc01246faccb7f5b3cad5016dd5033',
-    verify-yeahpromos:'778d0866389c',
+    verify-yeahpromos: '778d0866389c',
   },
 };
 
