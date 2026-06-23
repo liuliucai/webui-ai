@@ -1,5 +1,3 @@
-import { CONTACT_US_EMAIL } from '@/lib/env';
-
 export default function AboutUsPage() {
   return (
     <main className='min-h-screen bg-[#0F0E12] text-gray-300 py-16 px-6 lg:px-0'>
