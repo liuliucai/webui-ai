@@ -51,7 +51,7 @@ export default function Footer() {
       href: '/privacy-policy',
     },
     {
-      title: 'Terms & Conditions',
+      title: t('Terms & Conditions'),
       href: '/terms-of-service',
     },
   ];
