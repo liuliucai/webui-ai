@@ -56,7 +56,7 @@ export default function AboutUsPage() {
               </li>
               <li>
                 <strong className='text-gray-300'>Business Inquiry Email:</strong>{' '}
-                <a href={`mailto:suport@ixiexiu.com`} className='text-blue-400 hover:underline'>
+                <a href='mailto:suport@ixiexiu.com' className='text-blue-400 hover:underline'>
                   suport@ixiexiu.com
                 </a>
               </li>
