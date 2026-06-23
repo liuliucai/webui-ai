@@ -5,8 +5,7 @@ export default function Page() {
 
   return (
     <div className='prose mx-auto p-6 text-gray-200 prose-headings:text-gray-200'>
-      
-      {/* 🟢 专为 Google 广告审核强行插入的合规声明卡片（纯英文，不走翻译） */}
+      {/* 🟢 专为 Google 广告审核强行插入的合规声明卡片 */}
       <div className='mb-10 bg-[#15141A] p-6 rounded-lg border border-gray-800 text-gray-300 not-prose'>
         <h2 className='text-xl font-semibold text-white mb-4'>About Us & Corporate Identity</h2>
         <p className='mb-3 text-sm leading-relaxed'>
@@ -20,7 +19,7 @@ export default function Page() {
         </p>
       </div>
 
-      {/* ⬇️ 以下是你原本的所有国际化翻译内容，原封不动保留 */}
+      {/* 以下是原本的国际化翻译内容 */}
       <h1>{t('1-h1')}</h1>
       <p>{t('1-p')}</p>
 
