@@ -37,8 +37,8 @@ export default function Footer() {
     { title: 'Flux AI Image Generator', href: 'https://flux-ai.io/' },
     { title: 'Photo to Video AI', href: 'https://dreammachineai.online/' },
     { title: 'Flux Pro Image Generator', href: 'https://flux-pro.net/' },
-    { title: t('tap4'), href: 'https://tap4.ai/' },
-    { title: t('tattoo'), href: 'https://tattooai.design/' },
+    { title: t('tap4') || 'Tap4', href: 'https://tap4.ai/' },
+    { title: t('tattoo') || 'Tattoo AI', href: 'https://tattooai.design/' },
   ];
 
   const INFO_LIST = [
@@ -47,11 +47,11 @@ export default function Footer() {
       href: '/about-us',
     },
     {
-     titile: t('About Us & Privacy Policy'),
-     href: '/privacy-policy',
+      title: t('About Us & Privacy Policy'),
+      href: '/privacy-policy',
     },
     {
-      title: t('termsConditions'),
+      title: 'Terms & Conditions',
       href: '/terms-of-service',
     },
   ];
@@ -60,13 +60,13 @@ export default function Footer() {
     <footer className='w-full bg-[#15141A] text-gray-300'>
       <div className='mx-auto flex min-h-[251px] max-w-pc flex-col items-center justify-between p-10 pb-5 lg:h-[180px] lg:flex-row lg:px-0 lg:pb-10'>
         <div className='flex flex-col items-center lg:items-stretch'>
-          <p className='text-xl font-bold text-white lg:h-8 lg:text-[32px]'>{t('title')}</p>
-          <p className='text-xs mt-1 text-gray-400'>{t('subTitle')}</p>
+          <p className='text-xl font-bold text-white lg:h-8 lg:text-[32px]'>{t('title') || 'AI Tools'}</p>
+          <p className='text-xs mt-1 text-gray-400'>{t('subTitle') || 'Best Platform'}</p>
         </div>
 
         <div className='mt-5 flex flex-col items-center gap-y-5 lg:mt-0 lg:flex-row lg:items-stretch lg:gap-x-10'>
           <div className='flex w-full flex-col gap-2'>
-            <p className='font-bold text-white'>{t('support')}</p>
+            <p className='font-bold text-white'>{t('support') || 'Support'}</p>
             {SupportLinks.map((item) => (
               <a
                 href={item.href}
@@ -88,10 +88,10 @@ export default function Footer() {
             <a
               href={`mailto:${CONTACT_US_EMAIL}`}
               className='whitespace-nowrap text-xs text-gray-400 hover:text-white hover:opacity-70 lg:text-sm'
-              title={t('contactUs')}
+              title={t('contactUs') || 'Contact Us'}
               type='email'
             >
-              {t('contactUs')}
+              {t('contactUs') || 'Contact Us'}
             </a>
           </div>
         </div>
