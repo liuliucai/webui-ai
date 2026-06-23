@@ -43,7 +43,7 @@ export default function Footer() {
 
   const INFO_LIST = [
     {
-      title: t('aboutUs'),
+      title: 'aboutUs',
       href: '/about-us',
     },
     {
