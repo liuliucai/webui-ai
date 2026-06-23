@@ -31,7 +31,6 @@ function InfoLink({
 export default function Footer() {
   const t = useTranslations('Footer');
 
-  // 这里是你原本的所有 Support 链接，一个都不少：
   const SupportLinks = [
     { title: 'Chat o1', href: 'https://chat4o.ai/' },
     { title: 'Grok Image Generator', href: 'https://grokimagegenerator.net/' },
@@ -44,7 +43,7 @@ export default function Footer() {
 
   const INFO_LIST = [
     {
-      title: t('aboutUs'), 
+      title: t('aboutUs'),
       href: '/about-us',
     },
     {
@@ -64,9 +63,8 @@ export default function Footer() {
           <p className='text-xl font-bold text-white lg:h-8 lg:text-[32px]'>{t('title')}</p>
           <p className='text-xs mt-1 text-gray-400'>{t('subTitle')}</p>
         </div>
-        
+
         <div className='mt-5 flex flex-col items-center gap-y-5 lg:mt-0 lg:flex-row lg:items-stretch lg:gap-x-10'>
-          {/* Support 链接渲染区域 - 强制指定 text-white 和 text-gray-400 确保可见 */}
           <div className='flex w-full flex-col gap-2'>
             <p className='font-bold text-white'>{t('support')}</p>
             {SupportLinks.map((item) => (
@@ -82,7 +80,7 @@ export default function Footer() {
               </a>
             ))}
           </div>
-          
+
           <div className='grid grid-cols-2 gap-x-10 gap-y-5 lg:grid-cols-1 lg:gap-3'>
             {INFO_LIST.map((item) => (
               <InfoLink key={item.href} href={item.href} title={item.title} />
@@ -99,11 +97,11 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Google Ads  */}
+      {/* Google Ads 审核专用的合规底部 */}
       <div className='border-t border-gray-800 px-10 py-6 lg:px-0 bg-[#0F0E12]'>
         <div className='mx-auto max-w-pc text-center text-[10px] leading-relaxed text-gray-500 lg:text-left lg:text-xs'>
           <p className='mb-2 text-gray-400'>
-            © {new Date().getFullYear()} <strong>Wulucai Trading</strong> Co., Ltd.,Huli District, Xiamen City All Rights Reserved.
+            © {new Date().getFullYear()} <strong>Wulucai Trading Co., Ltd.,Huli District, Xiamen City</strong> All Rights Reserved.
           </p>
           <p className='text-gray-500'>
             <strong>Disclaimer:</strong> This website is an independent product review and shopping guide platform. 
