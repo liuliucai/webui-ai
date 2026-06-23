@@ -43,15 +43,15 @@ export default function Footer() {
 
   const INFO_LIST = [
     {
-      title: t('About Us'),
+      title: 'About Us',
       href: '/about-us',
     },
     {
-      title: t('About Us & Privacy Policy'),
+      title: 'About Us & Privacy Policy',
       href: '/privacy-policy',
     },
     {
-      title: t('Terms & Conditions'),
+      title: 'Terms & Conditions',
       href: '/terms-of-service',
     },
   ];
