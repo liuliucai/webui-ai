@@ -47,7 +47,7 @@ export default function Footer() {
       href: '/about-us',
     },
     {
-      title: t('privacy'),
+      title: t('About Us & Privacy Policy'),
       href: '/privacy-policy',
     },
     {
