@@ -43,12 +43,12 @@ export default function Footer() {
 
   const INFO_LIST = [
     {
-      title: t('aboutUs'),
+      title: t('About Us'),
       href: '/about-us',
     },
     {
-      title: t('About Us & Privacy Policy'),
-      href: '/privacy-policy',
+     titile: t('About Us & Privacy Policy'),
+     href: '/privacy-policy',
     },
     {
       title: t('termsConditions'),
@@ -104,10 +104,7 @@ export default function Footer() {
             © {new Date().getFullYear()} <strong>Wulucai Trading Co., Ltd.,Huli District, Xiamen City</strong> All Rights Reserved.
           </p>
           <p className='text-gray-500'>
-            <strong>Disclaimer:</strong> This website is an independent product review and shopping guide platform. 
-            We are a participant in sub-affiliate marketing networks. We do not directly own or represent the advertised brands 
-            on this site. We may receive financial compensation or commissions when users click our external links to make purchases 
-            on third-party marketplaces (such as PartnerBoost or Amazon).
+            <strong>Disclaimer:</strong> This website is an independent product review and shopping guide platform. We are a participant in sub-affiliate marketing networks. We do not directly own or represent the advertised brands on this site. We may receive financial compensation or commissions when users click our external links to make purchases on third-party marketplaces (such as PartnerBoost or Amazon).
           </p>
         </div>
       </div>
